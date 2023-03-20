@@ -37,18 +37,15 @@ final class TrafficLightViewController: UIViewController {
         case redLightView:
             currentLight = yellowLightView
             redLightView.alpha = 1.0
-            yellowLightView.alpha = 0.3
             greenLightView.alpha = 0.3
             
         case yellowLightView:
             currentLight = greenLightView
             redLightView.alpha = 0.3
             yellowLightView.alpha = 1.0
-            greenLightView.alpha = 0.3
             
         case greenLightView:
             currentLight = redLightView
-            redLightView.alpha = 0.3
             yellowLightView.alpha = 0.3
             greenLightView.alpha = 1.0
             
